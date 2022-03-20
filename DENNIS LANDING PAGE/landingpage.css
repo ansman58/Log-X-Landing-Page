@@ -10,7 +10,7 @@ body {
     position: relative;
     background: rgba(249, 249, 249, 0.99);
     overflow-x: hidden;
-    max-width: 1800px;
+    /* max-width: 1800px; */
 }
 
 .menu-nav {
@@ -318,6 +318,19 @@ a {
     .left > .content {
       right: -90px;
   } 
+
+  /* .copyright  {
+    background-color: red;
+    
+}
+
+.copyright p {
+    background-color: blue;
+}
+
+.social-media {
+        background-color: green;
+} */
   
 
   @media only screen and (min-width: 800px) {
@@ -477,10 +490,12 @@ a {
     
     .copyright {
         transform: translateX(40%);
+       
     }
 
     .social-media {
         padding-left: 20px;
+        background-color: red;
     }
     .copyright p {
         margin-top: 10px;
@@ -759,32 +774,47 @@ a {
     }
 
     .main-footer::before {
-        content: '';
+        /* content: '';
         height: 1px;
         width: 100%;
         position: absolute;
         background-color: black;
-        bottom: 100px;
+        bottom: 100px; */
     }
 
     .social-media {
-        position: relative;
-        top: 16px;
-        left: 0;
-        width: 80%;
-        padding-left: 130px;
-        padding-bottom: 10px;
+        /* position: relative; */
+        /* top: 16px;
+        left: 0; */
+        width: 100%;
+        /* padding-left: 130px;
+        padding-bottom: 10px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 1rem 0;
     }
 
-    .social-media svg {
-        margin: 10px;
+    .social-media a:not(:last-child) {
+        /* margin: 10px; */
+        /* background-color: #EEB319; */
+        margin: 0 1.5rem 0rem 0;
+        
     }
+    .social-media svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
     .copyright p {
         text-align: center;
     }
 
     .copyright {
         margin-top: 30px;
+        margin: 0 0 2rem 0;
+        border-top: 1px solid black;
+        padding: 1rem 0 0 0;
     }
 
     .copyright p:not(:first-of-type) {

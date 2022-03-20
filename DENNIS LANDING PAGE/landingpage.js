@@ -26,8 +26,8 @@ let index = 0
 setInterval(() => {
     if(index < 400) {
         index += 100
-        slideDiv.forEach(el => {
-            el.style.transform = `translateX(-${index}%)`  ;
+        slideDiv.forEach(item => {
+            item.style.transform = `translateX(-${index}%)`  ;
             // "translateX(-" + index + "%)"
         })
     }

@@ -8,13 +8,23 @@ const hideTag = () =>{
     })
 }
 
+
 // Toggle targeted element to show with froEach Loop.
 faqTag.forEach(item =>{  
-    item.addEventListener('click', e =>{
-        if (e.target.className == 'btn') {
-            hideTag()
-            e.target.parentElement.classList.toggle('open');
-            e.target.innerHTML = '&#8722;';
+    item.addEventListener('click', (e) => {
+        const plus = item.querySelector(".plus")
+        const minus = item.querySelector(".minus")
+
+        if (e.target.className.includes("btn plus")) {
+            plus.classList.add("hide")          
+            plus.parentElement.classList.add('open');
+            minus.classList.remove("hide")
+        }
+
+        if (e.target.className.includes("btn minus")) {
+            minus.classList.add("hide")
+            minus.parentElement.classList.remove('open');
+            plus.classList.remove("hide")
         }
     }) 
 })
