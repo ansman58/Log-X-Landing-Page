@@ -1,0 +1,129 @@
+.menu-nav {
+    background-color: white;
+    padding-top: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+li {
+    list-style: none;
+}
+
+.logo-container {
+    justify-self: center;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    .logo-container {
+        padding-left: 70px;
+    }
+}
+
+.menu-ul {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-items: center;
+} 
+
+.menu-ul li {
+    list-style: none; 
+}
+
+.inside-li a{
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.25s ease-in;
+}
+
+.inside-li a:hover {
+    color: #EEB319;
+}
+
+.hamburger {
+    display: none;
+}
+
+.logo {
+    height: 44px;
+}
+@media (max-width: 50em) {
+    
+    .menu-nav {
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+        align-items: center;
+        padding-top: 5px;
+    }
+    .menu-ul {
+        display: flex;
+        width: 100%;
+        padding: 2.5rem 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        z-index: 12;
+        display: none;
+    }
+
+    .menu-ul.active, .bg.active {
+        display: flex;
+        background-color: #fff;
+    }
+
+    .inside-li:not(:last-child) {
+        margin: 0 0 2rem 0;
+    }
+    .inside-li a{
+        font-family: 'Work Sans', sans-serif;
+        text-decoration: none;
+        color: #495867;
+        font-weight: 700;
+        font-size: 16px;
+        transition: color 0.25s ease-in;
+    }
+    .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 3rem;
+        left: 0;
+        display: none;
+    }
+    .logo {
+        min-width: 4rem;
+        height: 2rem;
+        padding-left: 30px;
+    }
+
+    .logo-container {
+        padding-top: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .hamburger .active {
+        display: block;
+    }
+
+    .hamburger img {
+        width: 1.5rem;
+        display: none;
+    }
+
+    .hamburger svg {
+        display: none;
+    }
+}

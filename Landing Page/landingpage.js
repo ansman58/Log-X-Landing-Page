@@ -4,14 +4,12 @@ const background = document.querySelector('.bg');
 const open = document.querySelector('.open');
 const close = document.querySelector('.close');
 const slideDiv = document.querySelectorAll('.sliding-div');
-// const body = document.querySelector('.body')
 
 open.addEventListener('click', () => {
   navLink.classList.add('active');
   background.classList.add('active');
   close.classList.add('active');
   open.classList.remove('active');
-//   body.classList.remove('active')
 });
 
 close.addEventListener('click', () => {
@@ -19,7 +17,6 @@ close.addEventListener('click', () => {
     background.classList.remove('active');
     close.classList.remove('active');
     open.classList.add('active');
-    // body.classList.add('active')
 });
 let index = 0
 
@@ -28,7 +25,6 @@ setInterval(() => {
         index += 100
         slideDiv.forEach(item => {
             item.style.transform = `translateX(-${index}%)`  ;
-            // "translateX(-" + index + "%)"
         })
     }
 
