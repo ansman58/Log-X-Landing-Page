@@ -1,0 +1,86 @@
+.appended-section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.appended-section {
+  max-width: 800px;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.faq-1 {
+  margin-bottom: 20px;
+}
+
+.appended-section h1{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  color: #495867;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.appended-section h2{
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+}
+
+.faq{
+  padding: 30px 30px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  background-color: #495867;
+  line-height: 1.5em;
+  display: flex;
+}
+
+
+.faq .faq_text{
+  flex-grow: 2;
+  padding: 0;
+}
+
+.appended-section-btn{
+  color: #ccc;
+  font-weight: 400;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.appended-section-btn.hide {
+  display: none;
+}
+
+/* Hide p tags */
+.faq.open h2{
+  color: #EEB319;
+}
+
+.faq p{
+  display: none;
+  font-weight: 300;
+  font-family: 'Nunito', sans-serif;
+}
+
+.faq.open p{
+  display: block;
+}
+.faq.open .btn{
+  color: #EEB319;
+}
+
+@media (max-width: 800px){
+  .appended-section h1 {
+    font-size: 24px;
+  }
+}

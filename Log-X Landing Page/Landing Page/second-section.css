@@ -1,0 +1,135 @@
+.second-section {
+    text-align: center; 
+    background-color: #F9F9F9;
+}
+
+@media (min-width:800px) {
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .icon-div {
+        position: relative;
+        z-index: 2;
+    }
+
+    .icon-container {
+        position: relative;
+    }
+
+    .icon-container::after {
+        content: '';
+        height: 3px;
+        right: 10px;
+        left: 10px;
+        position: absolute;
+        background-color: #495867;
+        top: 50%;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .p-div p {
+        padding: 0px 30px 0px 30px;
+        font-size: 16px;
+    }
+}
+
+.p-div p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: 800;
+}
+
+.icon-container {
+    margin: auto;
+    display: grid;
+    column-gap: 90px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.icon-div {
+    border-radius: 50%;
+    border: 0.2rem #EEB319 solid;
+    background-color: #495867;
+    height: 8rem;
+    width: 8rem;
+    margin: auto;
+}
+
+.icon-div svg{
+    margin-top:25%;
+    height: 3rem;
+}
+
+
+.icon-div p {
+    color: #EEB319;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+.walking {
+    grid-area: walking;
+}
+
+.bike {
+    grid-area: bike;
+}
+
+.car {
+    grid-area: car;
+}
+
+.truck {
+    grid-area: truck;
+}
+
+@media (max-width: 800px) {
+    .second-section {
+        width: 100%;
+        position: relative;
+    }
+
+    #services .p-div p {
+        font-size: 12px;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .icon-container {
+        display: grid;
+        width: 60%;
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+        grid-template-areas: 
+            "walking"
+            "bike"
+            "car" 
+            "truck";
+    }
+
+    .icon-div {
+        border-radius: 50%;
+        border: 1px solid EEB319;
+        background-color: #495867;
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .icon-div p {
+        color: #EEB319;
+        font-family: 'Lato', sans-serif;
+        margin-top: 20px;
+    }
+}

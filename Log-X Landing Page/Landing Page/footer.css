@@ -1,0 +1,257 @@
+.main-footer{
+    padding: 20px;
+    background-color: #ffffff;
+}
+.my-new-footer-div {
+        display: grid;
+        padding: 20px 0 10px 10px;
+        grid-template-columns: 2fr 2fr 0.8fr;
+        column-gap: 10px;
+    }
+
+    .main-footer p, .main-footer h3, .main-footer span {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .contact-info h3{
+        padding-left: 20px;
+    }
+
+    .contact-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+    }
+
+    .contact svg {
+        width: 45px;
+        margin-top: 10px;
+    }
+
+    .email svg {
+        margin-top: 5px;
+    }
+    
+    .explore a:hover {
+        text-decoration: underline;
+        color: #EEB319;
+    }
+    
+    .social-media svg:hover {
+        opacity: 0.6;
+    }
+
+    .about h3, .about p{
+        line-height: 1.9;
+    }
+
+    .about-paragraph {
+        font-size: 16px;
+    }
+    
+    .main-footer h3 {
+        font-size: 24px;
+        cursor: context-menu;
+    }
+
+    .social-media {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-media svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .social-media a:not(:last-child) {
+        margin: 0 1.5rem 0rem 0;  
+    }
+
+    .copyright {
+        border-top: 1px solid black;
+        padding: 1rem 0 0 0;
+        margin-bottom: 20px;
+    }
+
+    .copyright .find-us-on {
+        text-align: center;
+        padding-bottom: 10px;
+        font-style: italic;
+    }
+
+    .copyright-java {
+        padding-top: 20px;
+    }
+
+    .copyright-java .copyme {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .copyright-java .java {
+        font-size: 14px;
+        font-style: italic;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .copyright-java .java a {
+        color: #1783f0;
+    }
+
+@media (min-width:600px) and (max-width:800px) {
+    .my-new-footer-div {
+        display: grid;
+        padding: 20px 0 20px 5px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "about about"
+            "contact explore";
+        row-gap: 20px;
+        column-gap: 0pt;
+    }
+
+    .about {
+        grid-area: about;
+    }
+
+    .contact-info {
+        grid-area: contact;
+    }
+
+    .explore {
+        grid-area: explore;
+        justify-self: start;
+    }
+
+    .contact {
+        column-gap: 0;
+        grid-template-columns: 1fr 96%;
+    }
+
+    .social-media {
+        margin: 0 0 1rem 0;
+    }
+
+    .copyright-java .copyme {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .copyright-java .java {
+        font-size: 10px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .copyright {
+        padding: 0.5rem 0 0 0;
+        margin-bottom: 10px;
+    }
+
+    .copyright .find-us-on {
+        padding-bottom: 5px;
+    }
+
+    .copyright-java {
+       padding-left: 0;
+    }
+} 
+
+@media (max-width: 800px) {
+    .main-footer {
+        padding: 5px 10px 10px 0;
+    }
+    .my-new-footer-div {
+        display: grid;
+        padding: 20px 0 10px 5px;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }  
+
+    .about {
+        padding-left: 10px;
+    }
+    
+    .about-paragraph {
+        font-size: 1px;
+    }
+
+    .contact-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+    }
+
+    .contact-info h3{
+        padding-left: 10px;
+    }
+
+    .main-footer h3 {
+        font-size: 20px;
+        cursor: context-menu;
+    }
+
+    .main-footer p, .main-footer span {
+        font-size: 16px;
+    }
+
+    .contact svg {
+        width: 35px;
+        margin-top: 10px;
+    }
+
+    .email svg {
+        margin-top: 0;
+    }
+
+    .explore {
+        padding: 10px;
+    }
+
+    .social-media {
+        margin: 0 0 1rem 0;
+    }
+
+    .social-media svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .copyright-java .copyme {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .copyright-java .java {
+        font-size: 10px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .copyright {
+        padding: 0.5rem 0 0 0;
+        margin-bottom: 10px;
+    }
+
+    .copyright .find-us-on {
+        padding-bottom: 5px;
+    }
+
+    .copyright-java {
+       padding-left: 0;
+    }
+
+}

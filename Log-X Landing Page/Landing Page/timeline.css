@@ -1,0 +1,153 @@
+.my-timeline-section {
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.my-timeline-section h2 {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+  }
+
+ 
+    .my-timeline-section {
+      margin-bottom: 20px;
+    }
+    .timeline {
+      width: 70%;
+    }
+
+    .content {
+      padding: 20px 50px;
+    }
+  
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #EEB319;
+    top: 1px;
+    bottom: 1px;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .timeline .container {
+    padding: 10px 20px;
+    position: relative;
+    width: 50%;
+  }
+
+  @media (min-width:800px) {
+    .timeline .container::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      margin-top: 20px;
+      height: 20px;
+      right: -9px;
+      background-color: rgb(65, 65, 65);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+  }
+}
+  
+  .left {
+    right: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .right::after {
+    left: -11px;
+  }
+
+  .left::after {
+      right: -8px;
+  }
+  
+  .content {
+    padding: 20px 4px;
+    background-color: #495867;
+    position: relative;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #EEB319;
+  }
+
+    .odd {
+      position: relative;
+      left: 20%;
+    }
+
+  @media (max-width: 800px) {
+    .entire-container {
+      background-color: inherit;
+    }
+    .my-timeline-section h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .timeline::after {
+        left: 45px;
+        top: 10px;
+        bottom: 0px;
+    }
+
+    .timeline .container {
+        width: 90%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .left::after, .right::after {
+        left: 33px;
+        top: -22px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .right > .content {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .left > .content {
+        left: 0;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .timeline::after {
+        bottom: 10px;
+        top: 10px;
+    }
+
+    .timeline .container::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      margin-top: 20px;
+      height: 20px;
+      right: -17px;
+      background-color: #414141;
+      top: 10px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
