@@ -35,10 +35,11 @@ li {
 }
 
 .inside-li a{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.25s ease-in;
+    font-weight: 800;
 }
 
 .inside-li a:hover {

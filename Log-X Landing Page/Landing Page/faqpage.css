@@ -7,18 +7,25 @@
   max-width: 800px;
   margin: auto;
   border-radius: 5px;
-  border: 1px solid black;
+  margin-top: 4rem;
+ 
 }
 
 .faq-container {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  width: 100%;
+  width: 700px;
 }
 
-.faq-1 {
-  margin-bottom: 20px;
+.faq-1, .faq2 {
+  margin-bottom: 4rem;
 }
+
+/* .second-section {
+  margin-top: 4rem;
+} */
 
 .appended-section h1{
   font-size: 24px;
@@ -84,5 +91,13 @@
   }
   .faq {
     padding: 30px;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    /* width: 800px; */
   }
 }

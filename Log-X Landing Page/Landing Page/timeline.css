@@ -13,6 +13,7 @@
 .timeline {
     position: relative;
     margin: 0 auto;
+    margin-bottom: 4rem;
   }
 
  
@@ -83,8 +84,9 @@
     border-radius: 15px;
     width: 80%;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: #EEB319;
+    font-weight: 700;
   }
 
     .odd {

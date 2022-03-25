@@ -1,6 +1,7 @@
 .second-section {
     text-align: center; 
     background-color: #F9F9F9;
+    margin: 0 0 4rem 0;
 }
 
 @media (min-width:800px) {
@@ -62,8 +63,8 @@
     border-radius: 50%;
     border: 0.2rem #EEB319 solid;
     background-color: #495867;
-    height: 8rem;
-    width: 8rem;
+    height: 8.2rem;
+    width: 8.2rem;
     margin: auto;
 }
 
@@ -75,8 +76,10 @@
 
 .icon-div p {
     color: #EEB319;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 600;
+    font-size: .9rem;
+    
 }
 
 .walking {

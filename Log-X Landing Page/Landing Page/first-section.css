@@ -16,15 +16,30 @@
 
 .first-section div p {
     font-family: 'Nunito', sans-serif;
-    font-size: 24px;
+    font-size: 40px;
     padding: 0 20px;
-    text-align: center;
+    text-align: start;
+    max-width: 30rem;
+    font-weight: 800;
 }
 
 .first-section img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    min-width: 20rem;
     width: 50%;
+}
+
+@media (max-width: 1000px) { 
+    .first-section div p {
+        font-size: 35px;
+    }   
+}
+
+@media (max-width: 800px) { 
+    .first-section div p {
+        font-size: 30px;
+    }   
 }
 
 @media (max-width: 600px) {
@@ -37,5 +52,13 @@
     .first-section div p {
         font-size: 16px;
     }
+
+    .first-section img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        min-width: 0rem;
+        width: 50%;
+    }
     
 }
+
