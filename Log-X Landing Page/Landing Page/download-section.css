@@ -45,6 +45,7 @@ a {
         font-weight: 600;
         color: #EEB319;
         line-height: 1.5;
+        padding: 50px 30px 0 0;
 
     }
 
@@ -145,6 +146,7 @@ a {
     width: 100%;
     font-weight: 400;
     font-size: 12px;
+    padding-left: 30px;
     }
 
     .download .note {
