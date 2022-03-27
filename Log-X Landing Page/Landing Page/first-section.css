@@ -10,14 +10,14 @@
     align-items: center;
     justify-items: center;
     min-width: 100%;  
-    padding: 20px 0;
+    padding: 1.25rem 0;
     transition: transform 0.5s ease-in;
 }
 
 .first-section div p {
     font-family: 'Nunito', sans-serif;
-    font-size: 40px;
-    padding: 0 20px;
+    font-size: 2.5rem;
+    padding: 0 1.25rem;
     text-align: start;
     max-width: 30rem;
     font-weight: 800;
@@ -30,27 +30,28 @@
     width: 50%;
 }
 
-@media (max-width: 1000px) { 
+
+@media (max-width: 62.5rem) { 
     .first-section div p {
-        font-size: 35px;
+        font-size: 2.1875rem;
     }   
 }
 
-@media (max-width: 800px) { 
+@media (max-width: 50rem) { 
     .first-section div p {
-        font-size: 30px;
+        font-size: 1.875rem;
     }   
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     .first-section .sliding-div {
         display: flex;
         flex-direction: column-reverse;
-        row-gap: 15px;
+        row-gap: 0.9375rem;
     }
     
     .first-section div p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .first-section img {

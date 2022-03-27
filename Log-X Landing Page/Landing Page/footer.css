@@ -1,29 +1,29 @@
 .main-footer{
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #ffffff;
 }
 .my-new-footer-div {
         display: grid;
-        padding: 20px 0 10px 10px;
+        padding: 1.25rem 0 0.625rem 0.625rem;
         grid-template-columns: 2fr 2fr 0.8fr;
-        column-gap: 10px;
+        column-gap: 0.625rem;
     }
 
     .main-footer p, .main-footer h3, .main-footer span {
         font-family: 'Nunito', sans-serif;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.5;
     }
 
     .contact-info h3{
-        padding-left: 20px;
+        padding-left: 1.25rem;
     }
 
     .contact-div {
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 10px;
+        row-gap: 0.625rem;
     }
 
     .contact {
@@ -32,12 +32,12 @@
     }
 
     .contact svg {
-        width: 45px;
-        margin-top: 10px;
+        width: 2.8125rem;
+        margin-top: 0.625rem;
     }
 
     .email svg {
-        margin-top: 5px;
+        margin-top: 0.3125rem;
     }
     
     .explore a:hover {
@@ -54,11 +54,11 @@
     }
 
     .about-paragraph {
-        font-size: 16px;
+        font-size: 1rem;
     }
     
     .main-footer h3 {
-        font-size: 24px;
+        font-size: 1.5rem;
         cursor: context-menu;
     }
 
@@ -79,29 +79,29 @@
     }
 
     .copyright {
-        border-top: 1px solid black;
+        border-top: 0.0625rem solid black;
         padding: 1rem 0 0 0;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .copyright .find-us-on {
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 0.625rem;
         font-style: italic;
     }
 
     .copyright-java {
-        padding-top: 20px;
+        padding-top: 1.25rem;
     }
 
     .copyright-java .copyme {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 500;
         text-align: center;
     }
 
     .copyright-java .java {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: italic;
         text-align: center;
         font-weight: 700;
@@ -111,15 +111,15 @@
         color: #1783f0;
     }
 
-@media (min-width:600px) and (max-width:800px) {
+@media (min-width:37.5rem) and (max-width:50rem) {
     .my-new-footer-div {
         display: grid;
-        padding: 20px 0 20px 5px;
+        padding: 1.25rem 0 1.25rem 0.3125rem;
         grid-template-columns: 2fr 1fr;
         grid-template-areas: 
             "about about"
             "contact explore";
-        row-gap: 20px;
+        row-gap: 1.25rem;
         column-gap: 0pt;
     }
 
@@ -146,23 +146,23 @@
     }
 
     .copyright-java .copyme {
-        font-size: 10px;
+        font-size: 0.625rem;
         text-align: center;
     }
 
     .copyright-java .java {
-        font-size: 10px;
+        font-size: 0.625rem;
         padding-left: 0;
         text-align: center;
     }
 
     .copyright {
         padding: 0.5rem 0 0 0;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
     .copyright .find-us-on {
-        padding-bottom: 5px;
+        padding-bottom: 0.3125rem;
     }
 
     .copyright-java {
@@ -170,47 +170,47 @@
     }
 } 
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
     .main-footer {
-        padding: 5px 10px 10px 0;
+        padding: 0.3125rem 0.625rem 0.625rem 0;
     }
     .my-new-footer-div {
         display: grid;
-        padding: 20px 0 10px 5px;
+        padding: 1.25rem 0 0.625rem 0.3125rem;
         grid-template-columns: 1fr;
-        row-gap: 15px;
+        row-gap: 0.9375rem;
     }  
 
     .about {
-        padding-left: 10px;
+        padding-left: 0.625rem;
     }
     
     .about-paragraph {
-        font-size: 1px;
+        font-size: 0.0625rem;
     }
 
     .contact-div {
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 5px;
+        row-gap: 0.3125rem;
     }
 
     .contact-info h3{
-        padding-left: 10px;
+        padding-left: 0.625rem;
     }
 
     .main-footer h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
         cursor: context-menu;
     }
 
     .main-footer p, .main-footer span {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .contact svg {
-        width: 35px;
-        margin-top: 10px;
+        width: 2.1875rem;
+        margin-top: 0.625rem;
     }
 
     .email svg {
@@ -218,7 +218,7 @@
     }
 
     .explore {
-        padding: 10px;
+        padding: 0.625rem;
     }
 
     .social-media {
@@ -231,23 +231,23 @@
     }
 
     .copyright-java .copyme {
-        font-size: 10px;
+        font-size: 0.625rem;
         text-align: center;
     }
 
     .copyright-java .java {
-        font-size: 10px;
+        font-size: 0.625rem;
         padding-left: 0;
         text-align: center;
     }
 
     .copyright {
         padding: 0.5rem 0 0 0;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
     .copyright .find-us-on {
-        padding-bottom: 5px;
+        padding-bottom: 0.3125rem;
     }
 
     .copyright-java {

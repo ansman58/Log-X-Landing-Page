@@ -28,9 +28,9 @@ a {
         width: 80%;
         margin: auto;
         display: grid;
-        grid-row-gap: 20px;
+        grid-row-gap: 1.25rem;
         grid-template-columns: repeat(2, 1fr);
-        height: 370px;
+        height: 23.125rem;
         grid-template-areas: 
             "text text"
             "android apple";
@@ -40,11 +40,11 @@ a {
         grid-area: text;
         width: 50%;
         font-family: 'Nunito', sans-serif;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 600;
         color: #EEB319;
         line-height: 1.5;
-        padding: 50px 30px 0 0;
+        padding: 3.125rem 1.875rem 0 0;
 
     }
 
@@ -57,95 +57,92 @@ a {
     }
 
     .download  .android{
-        width: 150px;
-        height: 50px;
+        width: 9.375rem;
+        height: 3.125rem;
         background-color: #fff;
         color: #000;
-        border-radius: 15px;
+        border-radius: 0.9375rem;
         display: flex;
         align-items: center;
         text-decoration: none;
     }
+
     .download  .iphone{
-        width: 150px;
-        height: 50px;
-        background-color: #000;
-        color: white;
-        border-radius: 15px;
+        width: 9.375rem;
+        height: 3.125rem;
+        background-color: #fff;
+        color: #000;
+        border-radius: 0.9375rem;
         display: flex;
         align-items: center;
         text-decoration: none;
+    }
+
+    .download  .iphone:hover{
+        background-color: #000;
+        color: white;
+    }
+
+    .download .iphone:hover path {
+        fill: #fff;
     }
 
     .div-btn {
     display: flex;
-    column-gap: 40px;
+    column-gap: 2.5rem;
     }
 
     .btn h4 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;  
     } 
 
     .div-btn .btn svg {
     margin-left: 0.5rem;
-    padding-right: 10px;
-    width: 30px;
+    padding-right: 0.625rem;
+    width: 1.875rem;
     }
 
-    @media (max-width:800px) {
+    @media (max-width:50rem) {
     .note p {
         text-align: center;
         font-weight: 100;
-        font-size: 16px;
+        font-size: 1rem;
         font-family: 'Nunito', sans-serif;
     }
     .download  .android{
-        width: 120px;
-        height: 40px;
-        color: #000;
-        background-color: #fff;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
+        width: 7.5rem;
+        height: 2.5rem;
     }
     .download  .iphone{
-        width: 120px;
-        height: 40px;
-        background-color: #000;
-        color: white;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
+        width: 7.5rem;
+        height: 2.5rem;
     }
     .btn h4 {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 700;  
         }
 
     .download .note {
         width: 100%;
-        height: 250px;
-        padding-left: 160px;
+        height: 15.625rem;
+        padding-left: 10rem;
     }
 
     .div-btn {
         width: 50%;
-        column-gap: 10px;
+        column-gap: 0.625rem;
     }
 
-
     }
 
-    @media (max-width:600px) {
+    @media (max-width:37.5rem) {
     .note p {
-    width: 100%;
-    font-weight: 400;
-    font-size: 12px;
-    padding-left: 30px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 0.75rem;
+        padding-left: 1.875rem;
     }
 
     .download .note {
@@ -162,7 +159,7 @@ a {
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
-        row-gap: 20px;
+        row-gap: 1.25rem;
         }
 
     .btn-11 {
@@ -170,8 +167,8 @@ a {
     }
 
     .div-btn .btn {
-    display: flex;
-    padding: auto;
+        display: flex;
+        padding: auto;
     }
 
     }  

@@ -1,0 +1,58 @@
+.waiting-list {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    background-color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.waiting-list-btn button {
+    background-color: #EEB319;
+    border: none;
+    border-radius: 1.5625rem;
+    padding: 0.625rem 1.875rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.get-notified-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.625rem;
+
+}
+
+.waiting-list-paragraph{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.875rem;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+@media (max-width:50rem) {
+    .waiting-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.9375rem;
+        font-size: 1rem;
+        padding-top: 0.625rem;
+        margin-bottom: 0.625rem;
+    }
+    .waiting-list-paragraph{
+        flex-direction: column;
+        row-gap: 0.625rem;
+        padding-inline: 0.625rem;
+        padding-bottom: 0.625rem;
+    }
+
+    .waiting-list-btn button {
+        padding: 0.3125rem 0.5rem;
+    }
+
+    .get-notified-btn {
+        column-gap: 0.125rem;
+    }
+}

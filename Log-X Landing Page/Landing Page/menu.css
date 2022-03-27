@@ -1,6 +1,6 @@
 .menu-nav {
     background-color: white;
-    padding-top: 15px;
+    padding-top: 0.9375rem;
     position: sticky;
     top: 0;
     z-index: 20;
@@ -17,9 +17,9 @@ li {
     width: 100%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50rem) {
     .logo-container {
-        padding-left: 70px;
+        padding-left: 4.375rem;
     }
 }
 
@@ -37,7 +37,7 @@ li {
 .inside-li a{
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     transition: color 0.25s ease-in;
     font-weight: 800;
 }
@@ -51,7 +51,7 @@ li {
 }
 
 .logo {
-    height: 44px;
+    height: 2.75rem;
 }
 @media (max-width: 50em) {
     
@@ -59,7 +59,7 @@ li {
         grid-template-columns: 1fr 1fr;
         justify-items: end;
         align-items: center;
-        padding-top: 5px;
+        padding-top: 0.3125rem;
     }
     .menu-ul {
         display: flex;
@@ -88,7 +88,7 @@ li {
         text-decoration: none;
         color: #495867;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 1rem;
         transition: color 0.25s ease-in;
     }
     .bg {
@@ -103,16 +103,16 @@ li {
     .logo {
         min-width: 4rem;
         height: 2rem;
-        padding-left: 30px;
+        padding-left: 1.875rem;
     }
 
     .logo-container {
-        padding-top: 10px;
+        padding-top: 0.625rem;
     }
 
     .hamburger {
         display: block;
-        padding-right: 30px;
+        padding-right: 1.875rem;
     }
 
     .hamburger .active {
