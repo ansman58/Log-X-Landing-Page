@@ -20,155 +20,141 @@ a {
     color: inherit;
 }
 
-    .download {
-        background-color: #495867;
-    }
+.download {
+    background-color: #495867;
+}
 
-    .download .note {
-        width: 80%;
-        margin: auto;
-        display: grid;
-        grid-row-gap: 1.25rem;
-        grid-template-columns: repeat(2, 1fr);
-        height: 23.125rem;
-        grid-template-areas: 
-            "text text"
-            "android apple";
-    }
+.download .note {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-row-gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+    height: 23.125rem;
+    grid-template-areas: 
+        "text text"
+        "android apple";
+}
 
-    .note p {
-        grid-area: text;
-        width: 50%;
-        font-family: 'Nunito', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #EEB319;
-        line-height: 1.5;
-        padding: 3.125rem 1.875rem 0 0;
+.note p {
+    grid-area: text;
+    width: 50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #EEB319;
+    line-height: 1.5;
+    padding: 3.125rem 1.875rem 0 0;
 
-    }
+}
 
-    .android-phone {
-        grid-area: android;
-    }
+.android-phone {
+    grid-area: android;
+}
 
-    .apple-phone {
-        grid-area: apple;
-    }
+.apple-phone {
+    grid-area: apple;
+}
 
-    .download  .android{
-        width: 9.375rem;
-        height: 3.125rem;
-        background-color: #fff;
-        color: #000;
-        border-radius: 0.9375rem;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-    }
-
-    .download  .iphone{
-        width: 9.375rem;
-        height: 3.125rem;
-        background-color: #fff;
-        color: #000;
-        border-radius: 0.9375rem;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-    }
-
-    .download  .iphone:hover{
-        background-color: #000;
-        color: white;
-    }
-
-    .download .iphone:hover path {
-        fill: #fff;
-    }
-
-    .div-btn {
+.download  .btn{
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.9375rem;
     display: flex;
-    column-gap: 2.5rem;
-    }
+    align-items: center;
+    text-decoration: none;
+}
 
-    .btn h4 {
+.download  .btn:hover{
+    background-color: #000;
+    color: white;
+}
+
+.download .btn:hover path {
+    fill: #fff;
+}
+
+.div-btn {
+display: flex;
+column-gap: 2.5rem;
+}
+
+.btn h4 {
+font-size: 1rem;
+font-weight: 700;
+font-family: 'Nunito', sans-serif;  
+} 
+
+.div-btn .btn svg {
+margin-left: 0.5rem;
+padding-right: 0.625rem;
+width: 1.875rem;
+}
+
+@media (max-width:50rem) {
+.note p {
+    text-align: center;
+    font-weight: 100;
     font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif;  
-    } 
+    font-family: 'Nunito', sans-serif;
+}
 
-    .div-btn .btn svg {
-    margin-left: 0.5rem;
-    padding-right: 0.625rem;
-    width: 1.875rem;
+.download  .btn{
+    width: 7.5rem;
+    height: 2.5rem;
+}
+.btn h4 {
+    font-size: 0.75rem;
+    font-weight: 700;  
     }
 
-    @media (max-width:50rem) {
-    .note p {
-        text-align: center;
-        font-weight: 100;
-        font-size: 1rem;
-        font-family: 'Nunito', sans-serif;
-    }
-    .download  .android{
-        width: 7.5rem;
-        height: 2.5rem;
-    }
-    .download  .iphone{
-        width: 7.5rem;
-        height: 2.5rem;
-    }
-    .btn h4 {
-        font-size: 0.75rem;
-        font-weight: 700;  
-        }
+.download .note {
+    width: 100%;
+    height: 15.625rem;
+    padding-left: 10rem;
+}
 
-    .download .note {
-        width: 100%;
-        height: 15.625rem;
-        padding-left: 10rem;
-    }
+.div-btn {
+    width: 50%;
+    column-gap: 0.625rem;
+}
 
-    .div-btn {
-        width: 50%;
-        column-gap: 0.625rem;
-    }
+}
 
-    }
+@media (max-width:37.5rem) {
+.note p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding-left: 1.875rem;
+}
 
-    @media (max-width:37.5rem) {
-    .note p {
-        width: 100%;
-        font-weight: 400;
-        font-size: 0.75rem;
-        padding-left: 1.875rem;
+.download .note {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: center;
+}
+
+.div-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    row-gap: 1.25rem;
     }
 
-    .download .note {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0;
-        justify-content: center;
-    }
+.btn-11 {
+    margin: 0 auto;
+}
 
-    .div-btn {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        row-gap: 1.25rem;
-        }
+.div-btn .btn {
+    display: flex;
+    padding: auto;
+}
 
-    .btn-11 {
-        margin: 0 auto;
-    }
-
-    .div-btn .btn {
-        display: flex;
-        padding: auto;
-    }
-
-    }  
+}  
